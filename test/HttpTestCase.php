@@ -33,7 +33,7 @@ abstract class HttpTestCase extends TestCase
     public function __construct($name = null, array $data = [], $dataName = '')
     {
         parent::__construct($name, $data, $dataName);
-        $this->client = make(Client::class);
+        $this->client = \Hyperf\Support\make(Client::class);
     }
 
     public function __call($name, $arguments)
